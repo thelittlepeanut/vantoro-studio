@@ -21,17 +21,8 @@ function VantoroIcon({ size = 100 }: { size?: number }) {
 
 function SweepIcon({ size = 28 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 28 28" fill="none">
-      <defs>
-        <linearGradient id="sweep-card-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#5841D8" />
-          <stop offset="1" stopColor="#4833C8" />
-        </linearGradient>
-      </defs>
-      <rect width="28" height="28" rx="7" fill="url(#sweep-card-grad)" />
-      <path d="M14 7l-5 9h10L14 7z" fill="white" opacity=".9" />
-      <path d="M9 16l5 5 5-5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity=".6" />
-    </svg>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src="/assets/sweep-logo.png" alt="Sweep" width={size} height={size} style={{ borderRadius: Math.round(size * 0.25), display: 'block' }} />
   );
 }
 

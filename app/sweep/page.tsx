@@ -176,7 +176,7 @@ export default function SweepPage() {
         ctaKey="nav.cta"
         ctaHref="#"
         brandText="Sweep"
-        brandHref="/sweep"
+        brandHref="/"
       />
 
       {/* ── HERO ── */}
@@ -664,17 +664,8 @@ export default function SweepPage() {
         style={{ borderTop: '1px solid var(--color-border)' }}
       >
         <div className="flex items-center gap-2 text-[14px] font-bold">
-          <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
-            <defs>
-              <linearGradient id="sweep-footer-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#5841D8" />
-                <stop offset="1" stopColor="#4833C8" />
-              </linearGradient>
-            </defs>
-            <rect width="28" height="28" rx="7" fill="url(#sweep-footer-grad)" />
-            <path d="M14 7l-5 9h10L14 7z" fill="white" opacity=".9" />
-            <path d="M9 16l5 5 5-5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity=".6" />
-          </svg>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/sweep-logo.png" alt="Sweep" width={22} height={22} style={{ borderRadius: 5, display: 'block' }} />
           <Link href="/" className="no-underline text-[var(--color-text)] hover:opacity-70 transition-opacity">Vantoro Studio</Link>
         </div>
         <div className="flex gap-5">
