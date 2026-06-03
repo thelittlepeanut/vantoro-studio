@@ -31,7 +31,7 @@ export default function Nav({
   ctaHref = '#',
   backHref,
   backKey = 'nav.back',
-  brandText = 'Sweep',
+  brandText = 'FlickFlush',
   brandHref = '/sweep',
 }: NavProps) {
   const { lang, setLang, t } = useLang();
@@ -44,7 +44,8 @@ export default function Nav({
       {/* Brand */}
       <Link
         href={brandHref}
-        className="flex items-center gap-[10px] no-underline text-[var(--color-text)] text-[17px] font-bold tracking-[-0.3px]"
+        className="flex items-center gap-[10px] no-underline text-[var(--color-text)] text-[20px]"
+        style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}
       >
         <SweepIcon size={28} />
         <span>{brandText}</span>

@@ -175,7 +175,7 @@ export default function SweepPage() {
         links={NAV_LINKS}
         ctaKey="nav.cta"
         ctaHref="#"
-        brandText="Sweep"
+        brandText="FlickFlush"
         brandHref="/"
       />
 

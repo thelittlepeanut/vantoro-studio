@@ -150,7 +150,7 @@ export default function StudioPage() {
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-4">
               <SweepIcon size={44} />
-              <h2 className="text-[28px] font-extrabold tracking-[-1px]">Sweep</h2>
+              <h2 className="text-[28px]" style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}>FlickFlush</h2>
             </div>
             <p className="text-[16px] leading-relaxed mb-6" style={{ color: 'var(--color-text-sub)' }}>
               {t('sweep.desc')}

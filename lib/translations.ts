@@ -16,7 +16,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "hero.title.line1": "Your camera roll,",
     "hero.title.line2": "finally clean.",
     "hero.sub":
-      "Sweep is the fastest way to clean your photo library. Swipe through your photos like Tinder — keep what matters, trash the rest.",
+      "FlickFlush is the fastest way to clean your photo library. Swipe through your photos like Tinder — keep what matters, trash the rest.",
     // App Store badges
     "badge.ios.line1": "Download on the",
     "badge.ios.line2": "App Store",
@@ -85,16 +85,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     "f4.title.line1": "Stop duplicates",
     "f4.title.line2": "eating your storage.",
     "f4.desc":
-      "Sweep automatically groups near-identical photos, burst series, and screenshots. Keep the best one, delete the rest — in a single tap.",
+      "FlickFlush automatically groups near-identical photos, burst series, and screenshots. Keep the best one, delete the rest — in a single tap.",
     "f4.b1.h": "Best quality auto-identified",
     "f4.b1.p":
-      "Sweep badges the sharpest photo in each group — just confirm and move on.",
+      "FlickFlush badges the sharpest photo in each group — just confirm and move on.",
     "f4.b2.h": "Delete all or keep all",
     "f4.b2.p":
       "One button to wipe the whole group, one to keep everything. Fast, no friction.",
     "f4.b3.h": "Hundreds of groups per session",
     "f4.b3.p":
-      "Bursts, similar shots, screenshots — Sweep finds them all and presents each group one by one.",
+      "Bursts, similar shots, screenshots — FlickFlush finds them all and presents each group one by one.",
     // Feature 5 - Smart tools
     "f5.label": "Smart tools",
     "f5.title.line1": "Three modes",
@@ -129,9 +129,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "f7.title.line1": "100% local.",
     "f7.title.line2": "Zero servers.",
     "f7.desc":
-      "Your photos never leave your phone. Sweep works entirely offline — no account, no upload, no cloud. What happens on your device stays on your device.",
+      "Your photos never leave your phone. FlickFlush works entirely offline — no account, no upload, no cloud. What happens on your device stays on your device.",
     "f7.b1.h": "Photos stay on-device",
-    "f7.b1.p": "Sweep never sends any photo or metadata to a server.",
+    "f7.b1.p": "FlickFlush never sends any photo or metadata to a server.",
     "f7.b2.h": "Works offline",
     "f7.b2.p": "No internet connection required. Ever.",
     "f7.b3.h": "No account needed",
@@ -140,7 +140,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "modes.label": "Three modes",
     "modes.title": "One app. Every library.",
     "modes.sub":
-      "Whether you want a quick blitz or a deep clean, Sweep has the right mode for the moment.",
+      "Whether you want a quick blitz or a deep clean, FlickFlush has the right mode for the moment.",
     "mode1.num": "Mode 01",
     "mode1.title": "Quick Clean",
     "mode1.desc":
@@ -148,7 +148,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "mode2.num": "Mode 02",
     "mode2.title": "Duplicates",
     "mode2.desc":
-      "Sweep auto-groups near-identical photos, burst series, and screenshots. Review each cluster and wipe the waste in one tap.",
+      "FlickFlush auto-groups near-identical photos, burst series, and screenshots. Review each cluster and wipe the waste in one tap.",
     "mode3.num": "Mode 03",
     "mode3.title": "By Album",
     "mode3.desc":
@@ -158,9 +158,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "cta.title.line1": "Stop scrolling.",
     "cta.title.line2": "Start sweeping.",
     "cta.sub":
-      "Your photo library is waiting. Download Sweep and reclaim your space in minutes.",
+      "Your photo library is waiting. Download FlickFlush and reclaim your space in minutes.",
     // Footer
-    "footer.copy": "© 2025 Sweep. All rights reserved.",
+    "footer.copy": "© 2025 FlickFlush. All rights reserved.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
     // Privacy page
@@ -168,15 +168,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "privacy.page.h1": "Privacy Policy",
     "privacy.page.updated": "Last updated: May 27, 2025",
     "privacy.tldr":
-      "Sweep does not collect, store, or transmit any of your personal data or photos. Everything happens on your device. No account, no server, no cloud.",
+      "FlickFlush does not collect, store, or transmit any of your personal data or photos. Everything happens on your device. No account, no server, no cloud.",
     "privacy.s1.h2": "1. Who we are",
     "privacy.s1.p1":
-      'Sweep ("the App", "we", "our") is a photo library management app for iOS. The App is operated as an independent developer product.',
+      'FlickFlush ("the App", "we", "our") is a photo library management app for iOS. The App is operated as an independent developer product.',
     "privacy.s1.p2":
       "If you have any questions about this Privacy Policy, contact us at: help@vantoro.studio",
     "privacy.s2.h2": "2. Data we do NOT collect",
     "privacy.s2.p1":
-      "Sweep is designed from the ground up to operate entirely on your device. We do not collect, process, or transmit:",
+      "FlickFlush is designed from the ground up to operate entirely on your device. We do not collect, process, or transmit:",
     "privacy.s2.li1": "Your photos, videos, or any media from your library",
     "privacy.s2.li2":
       "Your name, email address, or any personally identifiable information",
@@ -187,15 +187,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "privacy.s2.li6":
       "Crash logs or analytics data (beyond what Apple collects natively via App Store)",
     "privacy.s2.p2":
-      "No account or sign-up is required to use Sweep. We have no user database.",
+      "No account or sign-up is required to use FlickFlush. We have no user database.",
     "privacy.s3.h2": "3. Photo library access",
     "privacy.s3.p1":
-      "Sweep requests access to your photo library solely to display and manage photos within the App on your device. Your photos are never uploaded to any server, shared with any third party, or transmitted over the internet.",
+      "FlickFlush requests access to your photo library solely to display and manage photos within the App on your device. Your photos are never uploaded to any server, shared with any third party, or transmitted over the internet.",
     "privacy.s3.p2":
       "All processing (sorting, duplicate detection, session statistics) is performed locally on your device using on-device APIs. You can revoke photo library access at any time in iOS Settings → Privacy & Security → Photos.",
     "privacy.s4.h2": "4. Subscription and payments",
     "privacy.s4.p1":
-      "Sweep may offer optional premium features through in-app purchases or subscriptions managed entirely by Apple via the App Store. We do not process, store, or have access to your payment information.",
+      "FlickFlush may offer optional premium features through in-app purchases or subscriptions managed entirely by Apple via the App Store. We do not process, store, or have access to your payment information.",
     "privacy.s4.p2":
       "Purchase and subscription management is handled by Apple Inc. and subject to Apple's Privacy Policy. RevenueCat, our subscription management provider, may collect limited anonymous transaction data (e.g., subscription status, purchase timestamps) to manage entitlements. RevenueCat does not receive your photos or personal identity information.",
     "privacy.s5.h2": "5. Third-party services",
@@ -207,7 +207,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "RevenueCat — for subscription entitlement management (anonymous, no personal data)",
     "privacy.s6.h2": "6. Children's privacy",
     "privacy.s6.p1":
-      "Sweep is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child under 13 has provided personal information to us, please contact us immediately at help@vantoro.studio.",
+      "FlickFlush is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child under 13 has provided personal information to us, please contact us immediately at help@vantoro.studio.",
     "privacy.s7.h2": "7. Changes to this policy",
     "privacy.s7.p1":
       "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes acceptance of the updated policy.",
@@ -220,15 +220,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.page.updated": "Last updated: May 27, 2025",
     "terms.s1.h2": "1. Acceptance of terms",
     "terms.s1.p1":
-      'By downloading, installing, or using Sweep ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.',
+      'By downloading, installing, or using FlickFlush ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.',
     "terms.s1.p2":
       "These Terms apply to all users of the App, including users of any free or premium features.",
     "terms.s2.h2": "2. Description of the App",
     "terms.s2.p1":
-      "Sweep is a photo library management application for iOS that allows you to review, organise, and delete photos from your device. The App operates entirely on-device — no photos, videos, or personal data are uploaded to any server.",
+      "FlickFlush is a photo library management application for iOS that allows you to review, organise, and delete photos from your device. The App operates entirely on-device — no photos, videos, or personal data are uploaded to any server.",
     "terms.s3.h2": "3. Subscriptions and in-app purchases",
     "terms.s3.p1":
-      "Sweep may offer optional premium features through auto-renewable subscriptions or one-time in-app purchases managed by Apple via the App Store.",
+      "FlickFlush may offer optional premium features through auto-renewable subscriptions or one-time in-app purchases managed by Apple via the App Store.",
     "terms.s3.sub1":
       "Auto-renewable subscriptions automatically renew at the end of each subscription period unless cancelled at least 24 hours before the renewal date. Payment is charged to your Apple ID account at confirmation of purchase and upon each renewal.",
     "terms.s3.p2":
@@ -249,12 +249,12 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.s4.li4": "Use the App for any unlawful purpose",
     "terms.s5.h2": "5. User responsibilities",
     "terms.s5.p1":
-      "You are solely responsible for all actions taken within the App, including the deletion of photos. Sweep moves deleted photos to your iOS Recently Deleted album (standard iOS behaviour), giving you a recovery window before permanent deletion. We are not responsible for any data loss resulting from your use of the App.",
+      "You are solely responsible for all actions taken within the App, including the deletion of photos. FlickFlush moves deleted photos to your iOS Recently Deleted album (standard iOS behaviour), giving you a recovery window before permanent deletion. We are not responsible for any data loss resulting from your use of the App.",
     "terms.s5.p2":
-      "You are responsible for maintaining appropriate backups of your photo library before using Sweep.",
+      "You are responsible for maintaining appropriate backups of your photo library before using FlickFlush.",
     "terms.s6.h2": "6. Intellectual property",
     "terms.s6.p1":
-      "The App, including all content, features, and functionality, is owned by the developer and protected by applicable intellectual property laws. The Sweep name, logo, and related marks are proprietary. Nothing in these Terms grants you any right to use our trademarks, logos, or brand assets.",
+      "The App, including all content, features, and functionality, is owned by the developer and protected by applicable intellectual property laws. The FlickFlush name, logo, and related marks are proprietary. Nothing in these Terms grants you any right to use our trademarks, logos, or brand assets.",
     "terms.s7.h2": "7. Disclaimer of warranties",
     "terms.s7.p1":
       'The App is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.',
@@ -285,7 +285,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "We build focused, beautiful mobile apps for iOS. Less features. More craft.",
     "studio.apps": "Our apps",
     "sweep.desc":
-      "Clean your photo library with a swipe. The fastest way to declutter your camera roll.",
+      "Clean your photo library with a flick. The fastest way to declutter your camera roll.",
     "sweep.explore": "Explore →",
     "footer.studio": "© 2025 Vantoro Studio. All rights reserved.",
   },
@@ -304,7 +304,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "hero.title.line1": "Ta photothèque,",
     "hero.title.line2": "enfin rangée.",
     "hero.sub":
-      "Sweep est la façon la plus rapide de nettoyer ta photothèque. Swipe tes photos comme sur Tinder — garde ce qui compte, jette le reste.",
+      "FlickFlush est la façon la plus rapide de nettoyer ta photothèque. Swipe tes photos comme sur Tinder — garde ce qui compte, jette le reste.",
     // App Store badges
     "badge.ios.line1": "Disponible sur",
     "badge.ios.line2": "App Store",
@@ -374,16 +374,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     "f4.title.line1": "Arrête les doublons",
     "f4.title.line2": "de bouffer ton stockage.",
     "f4.desc":
-      "Sweep regroupe automatiquement les photos quasi-identiques, les rafales et les captures d'écran. Garde la meilleure, supprime le reste — en un seul tap.",
+      "FlickFlush regroupe automatiquement les photos quasi-identiques, les rafales et les captures d'écran. Garde la meilleure, supprime le reste — en un seul tap.",
     "f4.b1.h": "Meilleure qualité identifiée",
     "f4.b1.p":
-      "Sweep identifie la photo la plus nette de chaque groupe — confirme et passe à la suite.",
+      "FlickFlush identifie la photo la plus nette de chaque groupe — confirme et passe à la suite.",
     "f4.b2.h": "Tout supprimer ou tout garder",
     "f4.b2.p":
       "Un bouton pour tout supprimer, un pour tout garder. Rapide, sans friction.",
     "f4.b3.h": "Des centaines de groupes par session",
     "f4.b3.p":
-      "Rafales, clichés similaires, captures d'écran — Sweep les trouve tous et présente chaque groupe un par un.",
+      "Rafales, clichés similaires, captures d'écran — FlickFlush les trouve tous et présente chaque groupe un par un.",
     // Feature 5 - Smart tools
     "f5.label": "Outils intelligents",
     "f5.title.line1": "Trois modes",
@@ -418,9 +418,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "f7.title.line1": "100% local.",
     "f7.title.line2": "Zéro serveur.",
     "f7.desc":
-      "Tes photos ne quittent jamais ton téléphone. Sweep fonctionne entièrement hors ligne — pas de compte, pas d'upload, pas de cloud. Ce qui se passe sur ton appareil reste sur ton appareil.",
+      "Tes photos ne quittent jamais ton téléphone. FlickFlush fonctionne entièrement hors ligne — pas de compte, pas d'upload, pas de cloud. Ce qui se passe sur ton appareil reste sur ton appareil.",
     "f7.b1.h": "Photos sur l'appareil",
-    "f7.b1.p": "Sweep n'envoie jamais aucune photo ni métadonnée à un serveur.",
+    "f7.b1.p": "FlickFlush n'envoie jamais aucune photo ni métadonnée à un serveur.",
     "f7.b2.h": "Fonctionne hors ligne",
     "f7.b2.p": "Aucune connexion internet requise. Jamais.",
     "f7.b3.h": "Pas de compte requis",
@@ -430,7 +430,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "modes.label": "Trois modes",
     "modes.title": "Une app. Chaque photothèque.",
     "modes.sub":
-      "Que tu veuilles un nettoyage express ou un grand ménage, Sweep a le mode qu'il faut.",
+      "Que tu veuilles un nettoyage express ou un grand ménage, FlickFlush a le mode qu'il faut.",
     "mode1.num": "Mode 01",
     "mode1.title": "Nettoyage Rapide",
     "mode1.desc":
@@ -438,7 +438,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "mode2.num": "Mode 02",
     "mode2.title": "Doublons",
     "mode2.desc":
-      "Sweep regroupe automatiquement les photos quasi-identiques, les rafales et les captures. Révise chaque groupe et supprime les doublons en un tap.",
+      "FlickFlush regroupe automatiquement les photos quasi-identiques, les rafales et les captures. Révise chaque groupe et supprime les doublons en un tap.",
     "mode3.num": "Mode 03",
     "mode3.title": "Par Album",
     "mode3.desc":
@@ -448,9 +448,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "cta.title.line1": "Stop de scroller.",
     "cta.title.line2": "Commence à sweeper.",
     "cta.sub":
-      "Ta photothèque t'attend. Télécharge Sweep et récupère ton espace en quelques minutes.",
+      "Ta photothèque t'attend. Télécharge FlickFlush et récupère ton espace en quelques minutes.",
     // Footer
-    "footer.copy": "© 2025 Sweep. Tous droits réservés.",
+    "footer.copy": "© 2025 FlickFlush. Tous droits réservés.",
     "footer.privacy": "Politique de confidentialité",
     "footer.terms": "Conditions d'utilisation",
     // Privacy page
@@ -458,15 +458,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "privacy.page.h1": "Politique de confidentialité",
     "privacy.page.updated": "Dernière mise à jour : 27 mai 2025",
     "privacy.tldr":
-      "Sweep ne collecte, ne stocke ni ne transmet aucune de tes données personnelles ou photos. Tout se passe sur ton appareil. Pas de compte, pas de serveur, pas de cloud.",
+      "FlickFlush ne collecte, ne stocke ni ne transmet aucune de tes données personnelles ou photos. Tout se passe sur ton appareil. Pas de compte, pas de serveur, pas de cloud.",
     "privacy.s1.h2": "1. Qui sommes-nous",
     "privacy.s1.p1":
-      "Sweep est une application de gestion de photothèque pour iOS. L'application est opérée en tant que produit développeur indépendant.",
+      "FlickFlush est une application de gestion de photothèque pour iOS. L'application est opérée en tant que produit développeur indépendant.",
     "privacy.s1.p2":
       "Pour toute question sur cette politique, contact : help@vantoro.studio",
     "privacy.s2.h2": "2. Données que nous NE collectons PAS",
     "privacy.s2.p1":
-      "Sweep est conçu pour fonctionner entièrement sur ton appareil. Nous ne collectons, traitons ni transmettons :",
+      "FlickFlush est conçu pour fonctionner entièrement sur ton appareil. Nous ne collectons, traitons ni transmettons :",
     "privacy.s2.li1": "Tes photos, vidéos ou tout autre média",
     "privacy.s2.li2": "Ton nom, adresse email ou toute information personnelle",
     "privacy.s2.li3": "Tes données de localisation",
@@ -475,15 +475,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "privacy.s2.li6":
       "Les journaux de crash (au-delà de ce qu'Apple collecte via l'App Store)",
     "privacy.s2.p2":
-      "Aucun compte n'est requis pour utiliser Sweep. Nous n'avons pas de base de données utilisateurs.",
+      "Aucun compte n'est requis pour utiliser FlickFlush. Nous n'avons pas de base de données utilisateurs.",
     "privacy.s3.h2": "3. Accès à la photothèque",
     "privacy.s3.p1":
-      "Sweep demande l'accès à ta photothèque uniquement pour afficher et gérer les photos sur ton appareil. Tes photos ne sont jamais uploadées sur un serveur, partagées avec des tiers, ni transmises sur internet.",
+      "FlickFlush demande l'accès à ta photothèque uniquement pour afficher et gérer les photos sur ton appareil. Tes photos ne sont jamais uploadées sur un serveur, partagées avec des tiers, ni transmises sur internet.",
     "privacy.s3.p2":
       "Tout le traitement est effectué localement sur ton appareil. Tu peux révoquer l'accès à la photothèque à tout moment dans Réglages iOS → Confidentialité & sécurité → Photos.",
     "privacy.s4.h2": "4. Abonnements et paiements",
     "privacy.s4.p1":
-      "Sweep peut proposer des fonctionnalités premium via des achats intégrés gérés par Apple. Nous n'avons pas accès à tes informations de paiement.",
+      "FlickFlush peut proposer des fonctionnalités premium via des achats intégrés gérés par Apple. Nous n'avons pas accès à tes informations de paiement.",
     "privacy.s4.p2":
       "RevenueCat, notre prestataire de gestion d'abonnements, peut collecter des données de transaction anonymes limitées pour gérer les droits. RevenueCat ne reçoit pas tes photos ni tes données personnelles.",
     "privacy.s5.h2": "5. Services tiers",
@@ -494,7 +494,7 @@ export const translations: Record<Lang, Record<string, string>> = {
       "RevenueCat — pour la gestion des droits d'abonnement (anonyme, sans données personnelles)",
     "privacy.s6.h2": "6. Confidentialité des enfants",
     "privacy.s6.p1":
-      "Sweep ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si tu penses qu'un enfant de moins de 13 ans nous a fourni des informations, contacte-nous immédiatement à help@vantoro.studio.",
+      "FlickFlush ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants. Si tu penses qu'un enfant de moins de 13 ans nous a fourni des informations, contacte-nous immédiatement à help@vantoro.studio.",
     "privacy.s7.h2": "7. Modifications",
     "privacy.s7.p1":
       "Nous pouvons mettre à jour cette politique. Les modifications seront publiées sur cette page.",
@@ -507,15 +507,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.page.updated": "Dernière mise à jour : 27 mai 2025",
     "terms.s1.h2": "1. Acceptation des conditions",
     "terms.s1.p1":
-      "En téléchargeant, installant ou utilisant Sweep, tu acceptes ces Conditions d'utilisation. Si tu n'es pas d'accord, n'utilise pas l'application.",
+      "En téléchargeant, installant ou utilisant FlickFlush, tu acceptes ces Conditions d'utilisation. Si tu n'es pas d'accord, n'utilise pas l'application.",
     "terms.s1.p2":
       "Ces Conditions s'appliquent à tous les utilisateurs de l'application, y compris les utilisateurs des fonctionnalités gratuites ou premium.",
     "terms.s2.h2": "2. Description de l'application",
     "terms.s2.p1":
-      "Sweep est une application de gestion de photothèque iOS qui te permet de réviser, organiser et supprimer des photos sur ton appareil. L'application fonctionne entièrement sur l'appareil — aucune photo ni donnée personnelle n'est uploadée sur un serveur.",
+      "FlickFlush est une application de gestion de photothèque iOS qui te permet de réviser, organiser et supprimer des photos sur ton appareil. L'application fonctionne entièrement sur l'appareil — aucune photo ni donnée personnelle n'est uploadée sur un serveur.",
     "terms.s3.h2": "3. Abonnements et achats intégrés",
     "terms.s3.p1":
-      "Sweep peut proposer des fonctionnalités premium via des abonnements à renouvellement automatique ou des achats intégrés gérés par Apple via l'App Store.",
+      "FlickFlush peut proposer des fonctionnalités premium via des abonnements à renouvellement automatique ou des achats intégrés gérés par Apple via l'App Store.",
     "terms.s3.sub1":
       "Les abonnements à renouvellement automatique se renouvellent automatiquement à la fin de chaque période sauf annulation au moins 24 heures avant la date de renouvellement.",
     "terms.s3.p2":
@@ -538,12 +538,12 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.s4.li4": "Utiliser l'application à des fins illégales",
     "terms.s5.h2": "5. Responsabilités de l'utilisateur",
     "terms.s5.p1":
-      "Tu es seul responsable de toutes les actions effectuées dans l'application, y compris la suppression de photos. Sweep déplace les photos supprimées dans l'album \"Récemment supprimés\" d'iOS.",
+      "Tu es seul responsable de toutes les actions effectuées dans l'application, y compris la suppression de photos. FlickFlush déplace les photos supprimées dans l'album \"Récemment supprimés\" d'iOS.",
     "terms.s5.p2":
-      "Tu es responsable de maintenir des sauvegardes appropriées de ta photothèque avant d'utiliser Sweep.",
+      "Tu es responsable de maintenir des sauvegardes appropriées de ta photothèque avant d'utiliser FlickFlush.",
     "terms.s6.h2": "6. Propriété intellectuelle",
     "terms.s6.p1":
-      "L'application est la propriété du développeur et protégée par les lois applicables. Le nom Sweep, le logo et les marques associées sont propriétaires.",
+      "L'application est la propriété du développeur et protégée par les lois applicables. Le nom FlickFlush, le logo et les marques associées sont propriétaires.",
     "terms.s7.h2": "7. Exclusion de garanties",
     "terms.s7.p1":
       'L\'application est fournie "telle quelle" et "telle que disponible" sans garanties d\'aucune sorte.',

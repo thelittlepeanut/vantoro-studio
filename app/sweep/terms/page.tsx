@@ -41,7 +41,7 @@ export default function TermsPage() {
   return (
     <div style={{ background: "var(--color-bg)", minHeight: "100vh" }}>
       <Nav
-        brandText="Sweep"
+        brandText="FlickFlush"
         brandHref="/sweep"
         backHref="/sweep"
         backKey="nav.back"
