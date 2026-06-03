@@ -669,8 +669,8 @@ export default function SweepPage() {
           <Link href="/" className="no-underline text-[var(--color-text)] hover:opacity-70 transition-opacity">Vantoro Studio</Link>
         </div>
         <div className="flex gap-5">
-          <Link href="/sweep/privacy" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.privacy')}</Link>
-          <Link href="/sweep/terms" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.terms')}</Link>
+          <Link href="/flickflush/privacy" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.privacy')}</Link>
+          <Link href="/flickflush/terms" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.terms')}</Link>
         </div>
         <p className="text-[12px]" style={{ color: 'var(--color-text-faint)' }}>{t('footer.copy')}</p>
       </footer>

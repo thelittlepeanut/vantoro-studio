@@ -42,8 +42,8 @@ export default function TermsPage() {
     <div style={{ background: "var(--color-bg)", minHeight: "100vh" }}>
       <Nav
         brandText="FlickFlush"
-        brandHref="/sweep"
-        backHref="/sweep"
+        brandHref="/flickflush"
+        backHref="/flickflush"
         backKey="nav.back"
       />
 
@@ -301,7 +301,7 @@ export default function TermsPage() {
           >
             {t("terms.s9.p1").split("Privacy Policy")[0]}
             <Link
-              href="/sweep/privacy"
+              href="/flickflush/privacy"
               className="no-underline hover:underline"
               style={{ color: "var(--color-accent-light)" }}
             >
@@ -369,14 +369,14 @@ export default function TermsPage() {
         </div>
         <div className="flex gap-5">
           <Link
-            href="/sweep/privacy"
+            href="/flickflush/privacy"
             className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors"
             style={{ color: "var(--color-text-muted)" }}
           >
             {t("footer.privacy")}
           </Link>
           <Link
-            href="/sweep/terms"
+            href="/flickflush/terms"
             className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors"
             style={{ color: "var(--color-text-muted)" }}
           >

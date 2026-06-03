@@ -156,7 +156,7 @@ export default function StudioPage() {
               {t('sweep.desc')}
             </p>
             <Link
-              href="/sweep"
+              href="/flickflush"
               className="inline-flex items-center gap-2 text-[14px] font-semibold no-underline transition-opacity duration-200 hover:opacity-70"
               style={{ color: 'var(--color-accent-light)' }}
             >

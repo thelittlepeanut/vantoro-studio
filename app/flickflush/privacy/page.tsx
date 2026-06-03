@@ -240,8 +240,8 @@ export default function PrivacyPage() {
     <div style={{ background: "var(--color-bg)", minHeight: "100vh" }}>
       <Nav
         brandText="FlickFlush"
-        brandHref="/sweep"
-        backHref="/sweep"
+        brandHref="/flickflush"
+        backHref="/flickflush"
         backKey="nav.back"
       />
 
@@ -311,14 +311,14 @@ export default function PrivacyPage() {
         </div>
         <div className="flex gap-5">
           <Link
-            href="/sweep/privacy"
+            href="/flickflush/privacy"
             className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors"
             style={{ color: "var(--color-text-muted)" }}
           >
             {t("footer.privacy")}
           </Link>
           <Link
-            href="/sweep/terms"
+            href="/flickflush/terms"
             className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors"
             style={{ color: "var(--color-text-muted)" }}
           >
