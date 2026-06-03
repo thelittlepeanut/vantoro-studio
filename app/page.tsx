@@ -114,7 +114,7 @@ export default function StudioPage() {
                   style={{ top: 8, left: '50%', transform: 'translateX(-50%)', width: 60, height: 16, background: '#000', borderRadius: 10 }}
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/screenshots/screen_3.png" alt="Sweep swipe screen" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
+                <img src="/screenshots/screen_3.png" alt="FlickFlush swipe screen" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
               </div>
             </div>
 
@@ -141,7 +141,7 @@ export default function StudioPage() {
                   style={{ top: 8, left: '50%', transform: 'translateX(-50%)', width: 60, height: 16, background: '#000', borderRadius: 10 }}
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/screenshots/screen_10.png" alt="Sweep session complete" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
+                <img src="/screenshots/screen_10.png" alt="FlickFlush session complete" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
               </div>
             </div>
           </div>

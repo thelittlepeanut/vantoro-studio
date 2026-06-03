@@ -19,7 +19,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('en');
 
   useEffect(() => {
-    const stored = localStorage.getItem('sweep-lang') as Lang | null;
+    const stored = localStorage.getItem('flickflush-lang') as Lang | null;
     if (stored === 'en' || stored === 'fr') {
       setLangState(stored);
     }
@@ -27,7 +27,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
 
   const setLang = (l: Lang) => {
     setLangState(l);
-    localStorage.setItem('sweep-lang', l);
+    localStorage.setItem('flickflush-lang', l);
   };
 
   const t = (key: string): string => {

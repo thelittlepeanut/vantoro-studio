@@ -100,7 +100,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "f5.title.line1": "Three modes",
     "f5.title.line2": "for every need.",
     "f5.desc":
-      "Quick clean, deep duplicate search, or album-by-album — pick your mode from the home screen and start sweeping in seconds.",
+      "Quick clean, deep duplicate search, or album-by-album — pick your mode from the home screen and start cleaning in seconds.",
     "f5.b1.h": "Quick Clean",
     "f5.b1.p":
       "Swipe through your entire library in chronological order. Unlimited, fast, thorough.",
@@ -156,7 +156,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     // CTA
     "cta.label": "Get started",
     "cta.title.line1": "Stop scrolling.",
-    "cta.title.line2": "Start sweeping.",
+    "cta.title.line2": "Start cleaning.",
     "cta.sub":
       "Your photo library is waiting. Download FlickFlush and reclaim your space in minutes.",
     // Footer
@@ -446,7 +446,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     // CTA
     "cta.label": "Commencer",
     "cta.title.line1": "Stop de scroller.",
-    "cta.title.line2": "Commence à sweeper.",
+    "cta.title.line2": "Commence à nettoyer.",
     "cta.sub":
       "Ta photothèque t'attend. Télécharge FlickFlush et récupère ton espace en quelques minutes.",
     // Footer

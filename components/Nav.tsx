@@ -32,7 +32,7 @@ export default function Nav({
   backHref,
   backKey = 'nav.back',
   brandText = 'FlickFlush',
-  brandHref = '/sweep',
+  brandHref = '/flickflush',
 }: NavProps) {
   const { lang, setLang, t } = useLang();
 
