@@ -16,6 +16,7 @@ interface NavProps {
   backKey?: string;
   brandText?: string;
   brandHref?: string;
+  brandIcon?: React.ReactNode;
 }
 
 function SweepIcon({ size = 28 }: { size?: number }) {
@@ -33,6 +34,7 @@ export default function Nav({
   backKey = 'nav.back',
   brandText = 'FlickFlush',
   brandHref = '/flickflush',
+  brandIcon,
 }: NavProps) {
   const { lang, setLang, t } = useLang();
 
@@ -47,7 +49,7 @@ export default function Nav({
         className="flex items-center gap-[10px] no-underline text-[var(--color-text)] text-[20px]"
         style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}
       >
-        <SweepIcon size={28} />
+        {brandIcon ?? <SweepIcon size={28} />}
         <span>{brandText}</span>
       </Link>
 

@@ -6,16 +6,8 @@ import Nav from '@/components/Nav';
 
 function VantoroIcon({ size = 100 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" fill="none">
-      <defs>
-        <linearGradient id="vantoro-logo" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#5841D8" />
-          <stop offset="1" stopColor="#4833C8" />
-        </linearGradient>
-      </defs>
-      <rect width="100" height="100" rx="26" fill="url(#vantoro-logo)" />
-      <text x="50" y="66" textAnchor="middle" fill="white" fontSize="52" fontWeight="800" fontFamily="-apple-system, sans-serif">V</text>
-    </svg>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src="/assets/vantoro-logo.png" alt="Vantoro Studio" width={size} height={size} style={{ borderRadius: Math.round(size * 0.26), display: 'block' }} />
   );
 }
 
@@ -32,7 +24,8 @@ export default function StudioPage() {
   return (
     <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }}>
       {/* Nav */}
-      <Nav brandText="Vantoro Studio" brandHref="/" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <Nav brandText="Vantoro Studio" brandHref="/" brandIcon={<img src="/assets/vantoro-logo.png" alt="Vantoro Studio" width={28} height={28} style={{ borderRadius: 7, display: 'block' }} />} />
 
       {/* Hero */}
       <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24 pb-20">
