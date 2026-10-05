@@ -671,6 +671,7 @@ export default function SweepPage() {
         <div className="flex gap-5">
           <Link href="/flickflush/privacy" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.privacy')}</Link>
           <Link href="/flickflush/terms" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.terms')}</Link>
+          <Link href="/flickflush/support" className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors" style={{ color: 'var(--color-text-muted)' }}>{t('footer.support')}</Link>
         </div>
         <p className="text-[12px]" style={{ color: 'var(--color-text-faint)' }}>{t('footer.copy')}</p>
       </footer>

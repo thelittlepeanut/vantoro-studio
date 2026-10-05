@@ -324,6 +324,13 @@ export default function PrivacyPage() {
           >
             {t("footer.terms")}
           </Link>
+          <Link
+            href="/flickflush/support"
+            className="text-[12px] no-underline hover:text-[var(--color-text)] transition-colors"
+            style={{ color: "var(--color-text-muted)" }}
+          >
+            {t("footer.support")}
+          </Link>
         </div>
         <p className="text-[12px]" style={{ color: "var(--color-text-faint)" }}>
           {t("footer.copy")}
