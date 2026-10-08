@@ -299,15 +299,15 @@ export default function TermsPage() {
             className="text-[15px] leading-[1.75]"
             style={{ color: "var(--color-text-sub)" }}
           >
-            {t("terms.s9.p1").split("Privacy Policy")[0]}
+            {t("terms.s9.p1").split("{privacy}")[0]}
             <Link
               href="/flickflush/privacy"
               className="no-underline hover:underline"
               style={{ color: "var(--color-accent-light)" }}
             >
-              Privacy Policy
+              {t("terms.s9.link")}
             </Link>
-            {t("terms.s9.p1").split("Privacy Policy")[1] ?? ""}
+            {t("terms.s9.p1").split("{privacy}")[1] ?? ""}
           </p>
         </div>
 
@@ -322,6 +322,22 @@ export default function TermsPage() {
           >
             {t("terms.s10.p1")}
           </p>
+        </div>
+
+        {/* Section 11 — Apple */}
+        <div className="mb-[52px]">
+          <h2 className="text-[18px] font-bold tracking-[-0.3px] mb-3 text-[var(--color-text)]">
+            {t("terms.sapple.h2")}
+          </h2>
+          {["p1", "p2", "p3", "p4", "p5"].map((k) => (
+            <p
+              key={k}
+              className="text-[15px] leading-[1.75] mb-[14px] last:mb-0"
+              style={{ color: "var(--color-text-sub)" }}
+            >
+              {t(`terms.sapple.${k}`)}
+            </p>
+          ))}
         </div>
 
         {/* Section 11 */}
@@ -354,6 +370,12 @@ export default function TermsPage() {
             >
               help@vantoro.studio
             </a>
+          </p>
+          <p
+            className="text-[15px] leading-[1.75] mt-[14px]"
+            style={{ color: "var(--color-text-sub)" }}
+          >
+            {t("terms.s12.p2")}
           </p>
         </div>
       </div>

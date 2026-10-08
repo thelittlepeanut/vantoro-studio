@@ -238,24 +238,24 @@ export const translations: Record<Lang, Record<string, string>> = {
     // Terms page
     "terms.page.badge": "Legal",
     "terms.page.h1": "Terms of Use",
-    "terms.page.updated": "Last updated: May 27, 2025",
+    "terms.page.updated": "Last updated: October 9, 2026",
     "terms.s1.h2": "1. Acceptance of terms",
     "terms.s1.p1":
       'By downloading, installing, or using FlickFlush ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.',
     "terms.s1.p2":
-      "These Terms apply to all users of the App, including users of any free or premium features.",
+      "These Terms apply to all users of the App, including users of any free or premium features. You must be at least 13 years old to use the App. If you are under the age of majority in your country, you confirm that a parent or guardian has agreed to these Terms on your behalf.",
     "terms.s2.h2": "2. Description of the App",
     "terms.s2.p1":
       "FlickFlush is a photo library management application for iOS that allows you to review, organise, and delete photos from your device. The App operates entirely on-device — no photos, videos, or personal data are uploaded to any server.",
     "terms.s3.h2": "3. Subscriptions and in-app purchases",
     "terms.s3.p1":
-      "FlickFlush may offer optional premium features through auto-renewable subscriptions or one-time in-app purchases managed by Apple via the App Store.",
+      "FlickFlush may offer optional premium features through auto-renewable subscriptions or one-time in-app purchases managed by Apple via the App Store. The price, duration and content of each subscription are shown in the App before you confirm your purchase.",
     "terms.s3.sub1":
       "Auto-renewable subscriptions automatically renew at the end of each subscription period unless cancelled at least 24 hours before the renewal date. Payment is charged to your Apple ID account at confirmation of purchase and upon each renewal.",
     "terms.s3.p2":
       "You can manage and cancel your subscription at any time in your Apple ID account settings (Settings → [your name] → Subscriptions). Cancellation takes effect at the end of the current billing period — you retain access to premium features until then.",
     "terms.s3.p3":
-      "Refunds. All purchases are final and non-refundable, except as required by applicable law or as determined by Apple's refund policy. To request a refund, contact Apple Support directly at reportaproblem.apple.com.",
+      "Refunds. All purchases are final and non-refundable, except as required by applicable law or as determined by Apple's refund policy. To request a refund, contact Apple Support directly at reportaproblem.apple.com. If you are a consumer in the European Union, you may have a legal right of withdrawal; by starting to use a digital feature immediately after your purchase, you ask for it to be supplied immediately and acknowledge that you may lose this right once it has begun, to the extent permitted by law.",
     "terms.s3.p4":
       "Free trials. If a free trial is offered, it will begin at the start of the subscription period. Any unused portion of a free trial is forfeited upon purchase of a subscription.",
     "terms.s3.p5":
@@ -280,24 +280,38 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.s7.p1":
       'The App is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.',
     "terms.s7.p2":
-      "We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.",
+      "We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components. Nothing in these Terms excludes or limits any warranty or right that cannot be excluded under applicable consumer protection law, including the legal guarantee of conformity under French and EU law.",
     "terms.s8.h2": "8. Limitation of liability",
     "terms.s8.p1":
       "To the maximum extent permitted by applicable law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, loss of profits, or any other losses arising from your use of or inability to use the App.",
     "terms.s8.p2":
-      "Our total liability to you for any claims arising from these Terms or the App shall not exceed the amount you paid us in the twelve months preceding the claim.",
+      "Our total liability to you for any claims arising from these Terms or the App shall not exceed the amount you paid us in the twelve months preceding the claim. Nothing in these Terms limits liability for death or personal injury, fraud, gross negligence or wilful misconduct, or any other liability that cannot be limited by law.",
     "terms.s9.h2": "9. Privacy",
     "terms.s9.p1":
-      "Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the App, you consent to the data practices described in the Privacy Policy.",
+      "Your use of the App is also governed by our {privacy}, which is incorporated into these Terms by reference. By using the App, you consent to the data practices described in the Privacy Policy.",
+    "terms.s9.link": "Privacy Policy",
     "terms.s10.h2": "10. Changes to the App and Terms",
     "terms.s10.p1":
-      "We reserve the right to modify or discontinue the App (or any part of it) at any time, with or without notice. We may also update these Terms from time to time. The updated Terms will be posted on this page with a revised date. Continued use of the App after changes constitutes acceptance of the updated Terms.",
-    "terms.s11.h2": "11. Governing law",
+      "We reserve the right to modify or discontinue the App (or any part of it) at any time, with or without notice. We may also update these Terms from time to time. The updated Terms will be posted on this page with a revised date. If a change is material, we will let you know in the App or on this page. Continued use of the App after changes constitutes acceptance of the updated Terms.",
+    "terms.sapple.h2": "11. Apple App Store terms",
+    "terms.sapple.p1":
+      'These Terms are between you and Vantoro Studio only, and not with Apple Inc. ("Apple"). Vantoro Studio, not Apple, is solely responsible for the App and its content.',
+    "terms.sapple.p2":
+      'Your use of the App is also subject to Apple\'s Licensed Application End User License Agreement (the "Apple EULA"), available at apple.com/legal/internet-services/itunes/dev/stdeula. If these Terms conflict with the Apple EULA, the Apple EULA prevails to the extent of the conflict.',
+    "terms.sapple.p3":
+      "Apple has no obligation to provide any maintenance or support services for the App. Support is provided by us through the Support page of this website.",
+    "terms.sapple.p4":
+      "If the App fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any). To the maximum extent permitted by law, Apple has no other warranty obligation with respect to the App. As between you and us, we are responsible for any claims relating to the App, including product liability claims, claims that the App fails to comply with a legal or regulatory requirement, consumer protection claims, and intellectual property infringement claims.",
+    "terms.sapple.p5":
+      "Apple and its subsidiaries are third-party beneficiaries of these Terms. Once you accept these Terms, Apple has the right to enforce them against you as a third-party beneficiary. You confirm that you are not located in a country subject to a U.S. Government embargo or designated as a \"terrorist supporting\" country, and that you are not on any U.S. Government list of prohibited or restricted parties.",
+    "terms.s11.h2": "12. Governing law",
     "terms.s11.p1":
-      "These Terms are governed by and construed in accordance with the laws of France, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of France.",
-    "terms.s12.h2": "12. Contact",
+      "These Terms are governed by and construed in accordance with the laws of France, without regard to its conflict of law provisions. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of France. If you are a consumer, this does not deprive you of the mandatory consumer protection provisions of your country of residence, and you may also bring a claim before the courts of your country of residence. Before going to court, we encourage you to contact us so we can try to resolve the issue amicably.",
+    "terms.s12.h2": "13. Contact",
     "terms.s12.p1":
       "For any questions about these Terms, contact us at: help@vantoro.studio",
+    "terms.s12.p2":
+      "FlickFlush is published by Vantoro Studio, operated by Kévin Bourdouleix, sole proprietor (entrepreneur individuel), France — SIREN 912714128.",
     // Vantoro Studio homepage
     "studio.badge": "Indie apps, thoughtfully made",
     "studio.title": "Vantoro",
@@ -546,24 +560,24 @@ export const translations: Record<Lang, Record<string, string>> = {
     // Terms page
     "terms.page.badge": "Légal",
     "terms.page.h1": "Conditions d'utilisation",
-    "terms.page.updated": "Dernière mise à jour : 27 mai 2025",
+    "terms.page.updated": "Dernière mise à jour : 9 octobre 2026",
     "terms.s1.h2": "1. Acceptation des conditions",
     "terms.s1.p1":
       "En téléchargeant, installant ou utilisant FlickFlush, tu acceptes ces Conditions d'utilisation. Si tu n'es pas d'accord, n'utilise pas l'application.",
     "terms.s1.p2":
-      "Ces Conditions s'appliquent à tous les utilisateurs de l'application, y compris les utilisateurs des fonctionnalités gratuites ou premium.",
+      "Ces Conditions s'appliquent à tous les utilisateurs de l'application, y compris les utilisateurs des fonctionnalités gratuites ou premium. Tu dois avoir au moins 13 ans pour utiliser l'application. Si tu n'as pas atteint l'âge de la majorité dans ton pays, tu confirmes qu'un parent ou un représentant légal a accepté ces Conditions en ton nom.",
     "terms.s2.h2": "2. Description de l'application",
     "terms.s2.p1":
       "FlickFlush est une application de gestion de photothèque iOS qui te permet de réviser, organiser et supprimer des photos sur ton appareil. L'application fonctionne entièrement sur l'appareil — aucune photo ni donnée personnelle n'est uploadée sur un serveur.",
     "terms.s3.h2": "3. Abonnements et achats intégrés",
     "terms.s3.p1":
-      "FlickFlush peut proposer des fonctionnalités premium via des abonnements à renouvellement automatique ou des achats intégrés gérés par Apple via l'App Store.",
+      "FlickFlush peut proposer des fonctionnalités premium via des abonnements à renouvellement automatique ou des achats intégrés gérés par Apple via l'App Store. Le prix, la durée et le contenu de chaque abonnement sont affichés dans l'application avant que tu confirmes ton achat.",
     "terms.s3.sub1":
       "Les abonnements à renouvellement automatique se renouvellent automatiquement à la fin de chaque période sauf annulation au moins 24 heures avant la date de renouvellement.",
     "terms.s3.p2":
       "Tu peux gérer et annuler ton abonnement dans les réglages de ton identifiant Apple. L'annulation prend effet à la fin de la période de facturation en cours.",
     "terms.s3.p3":
-      "Remboursements. Tous les achats sont définitifs et non remboursables, sauf disposition légale contraire. Pour demander un remboursement, contacte le support Apple sur reportaproblem.apple.com.",
+      "Remboursements. Tous les achats sont définitifs et non remboursables, sauf disposition légale contraire. Pour demander un remboursement, contacte le support Apple sur reportaproblem.apple.com. Si tu es un consommateur dans l'Union européenne, tu peux disposer d'un droit de rétractation légal ; en commençant à utiliser une fonctionnalité numérique immédiatement après ton achat, tu demandes qu'elle te soit fournie immédiatement et tu reconnais que tu peux perdre ce droit une fois la fourniture commencée, dans la mesure permise par la loi.",
     "terms.s3.p4":
       "Essais gratuits. Si un essai gratuit est proposé, il débutera au début de la période d'abonnement.",
     "terms.s3.p5":
@@ -590,24 +604,38 @@ export const translations: Record<Lang, Record<string, string>> = {
     "terms.s7.p1":
       'L\'application est fournie "telle quelle" et "telle que disponible" sans garanties d\'aucune sorte.',
     "terms.s7.p2":
-      "Nous ne garantissons pas que l'application sera ininterrompue, sans erreur ou exempte de virus.",
+      "Nous ne garantissons pas que l'application sera ininterrompue, sans erreur ou exempte de virus. Aucune stipulation de ces Conditions n'exclut ni ne limite les garanties ou droits qui ne peuvent être exclus en vertu du droit de la consommation applicable, notamment la garantie légale de conformité prévue par le droit français et européen.",
     "terms.s8.h2": "8. Limitation de responsabilité",
     "terms.s8.p1":
       "Dans la mesure maximale permise par la loi applicable, nous ne serons pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs.",
     "terms.s8.p2":
-      "Notre responsabilité totale envers toi ne dépassera pas le montant que tu nous as payé au cours des douze mois précédant la réclamation.",
+      "Notre responsabilité totale envers toi ne dépassera pas le montant que tu nous as payé au cours des douze mois précédant la réclamation. Aucune stipulation de ces Conditions ne limite la responsabilité en cas de décès ou de dommage corporel, de fraude, de faute lourde ou intentionnelle, ni toute autre responsabilité qui ne peut être limitée par la loi.",
     "terms.s9.h2": "9. Confidentialité",
     "terms.s9.p1":
-      "Ton utilisation est également régie par notre Politique de confidentialité, incorporée par référence à ces Conditions.",
+      "Ton utilisation est également régie par notre {privacy}, incorporée par référence à ces Conditions.",
+    "terms.s9.link": "Politique de confidentialité",
     "terms.s10.h2": "10. Modifications",
     "terms.s10.p1":
-      "Nous nous réservons le droit de modifier ou d'interrompre l'application à tout moment. L'utilisation continue de l'application après les modifications vaut acceptation.",
-    "terms.s11.h2": "11. Droit applicable",
+      "Nous nous réservons le droit de modifier ou d'interrompre l'application à tout moment. Si une modification est importante, nous t'en informerons dans l'application ou sur cette page. L'utilisation continue de l'application après les modifications vaut acceptation.",
+    "terms.sapple.h2": "11. Conditions de l'App Store d'Apple",
+    "terms.sapple.p1":
+      "Ces Conditions sont conclues entre toi et Vantoro Studio uniquement, et non avec Apple Inc. (« Apple »). Vantoro Studio, et non Apple, est seul responsable de l'application et de son contenu.",
+    "terms.sapple.p2":
+      "Ton utilisation de l'application est également soumise au contrat de licence d'utilisateur final d'Apple pour les applications sous licence (l'« EULA Apple »), disponible sur apple.com/legal/internet-services/itunes/dev/stdeula. En cas de contradiction entre ces Conditions et l'EULA Apple, l'EULA Apple prévaut dans la mesure de la contradiction.",
+    "terms.sapple.p3":
+      "Apple n'a aucune obligation de fournir de maintenance ou d'assistance pour l'application. L'assistance est assurée par nos soins via la page Assistance de ce site.",
+    "terms.sapple.p4":
+      "Si l'application n'est pas conforme à une garantie applicable, tu peux en informer Apple, qui te remboursera le prix d'achat (le cas échéant). Dans la mesure maximale permise par la loi, Apple n'a aucune autre obligation de garantie concernant l'application. Entre toi et nous, nous sommes responsables de toute réclamation relative à l'application, notamment les réclamations en matière de responsabilité du fait des produits, de non-respect d'une exigence légale ou réglementaire, de protection des consommateurs et de contrefaçon de propriété intellectuelle.",
+    "terms.sapple.p5":
+      "Apple et ses filiales sont des tiers bénéficiaires de ces Conditions. Dès que tu acceptes ces Conditions, Apple a le droit de les faire appliquer à ton encontre en tant que tiers bénéficiaire. Tu confirmes que tu ne te trouves pas dans un pays soumis à un embargo du gouvernement américain ou désigné comme « soutenant le terrorisme », et que tu ne figures sur aucune liste américaine de parties interdites ou restreintes.",
+    "terms.s11.h2": "12. Droit applicable",
     "terms.s11.p1":
-      "Ces conditions sont régies par le droit français. Tout litige sera soumis à la juridiction exclusive des tribunaux français.",
-    "terms.s12.h2": "12. Contact",
+      "Ces conditions sont régies par le droit français. Tout litige sera soumis à la juridiction exclusive des tribunaux français. Si tu es un consommateur, cela ne te prive pas des dispositions impératives de protection des consommateurs de ton pays de résidence, et tu peux aussi saisir les tribunaux de ton pays de résidence. Avant toute action en justice, nous t'encourageons à nous contacter afin de tenter de résoudre le problème à l'amiable.",
+    "terms.s12.h2": "13. Contact",
     "terms.s12.p1":
       "Pour toute question sur ces Conditions, contacte-nous : help@vantoro.studio",
+    "terms.s12.p2":
+      "FlickFlush est édité par Vantoro Studio, exploité par Kévin Bourdouleix, entrepreneur individuel, France — SIREN 912714128.",
     // Vantoro Studio homepage
     "studio.badge": "Apps indépendantes, faites avec soin",
     "studio.title": "Vantoro",
