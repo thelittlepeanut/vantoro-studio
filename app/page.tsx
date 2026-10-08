@@ -11,10 +11,10 @@ function VantoroIcon({ size = 100 }: { size?: number }) {
   );
 }
 
-function SweepIcon({ size = 28 }: { size?: number }) {
+function FlickFlushIcon({ size = 28 }: { size?: number }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src="/assets/sweep-logo.png" alt="Sweep" width={size} height={size} style={{ borderRadius: Math.round(size * 0.25), display: 'block' }} />
+    <img src="/assets/flickflush-logo.png" alt="FlickFlush" width={size} height={size} style={{ borderRadius: Math.round(size * 0.25), display: 'block' }} />
   );
 }
 
@@ -74,7 +74,7 @@ export default function StudioPage() {
           </div>
         </div>
 
-        {/* Sweep Card */}
+        {/* FlickFlush Card */}
         <div
           className="rounded-[24px] overflow-hidden p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start transition-all duration-300 hover:scale-[1.01]"
           style={{
@@ -142,18 +142,18 @@ export default function StudioPage() {
           {/* App info */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-4">
-              <SweepIcon size={44} />
+              <FlickFlushIcon size={44} />
               <h2 className="text-[28px]" style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}>FlickFlush</h2>
             </div>
             <p className="text-[16px] leading-relaxed mb-6" style={{ color: 'var(--color-text-sub)' }}>
-              {t('sweep.desc')}
+              {t('flickflush.desc')}
             </p>
             <Link
               href="/flickflush"
               className="inline-flex items-center gap-2 text-[14px] font-semibold no-underline transition-opacity duration-200 hover:opacity-70"
               style={{ color: 'var(--color-accent-light)' }}
             >
-              {t('sweep.explore')}
+              {t('flickflush.explore')}
             </Link>
           </div>
         </div>

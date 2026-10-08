@@ -319,9 +319,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "studio.sub":
       "We build focused, beautiful mobile apps for iOS. Less features. More craft.",
     "studio.apps": "Our apps",
-    "sweep.desc":
+    "flickflush.desc":
       "Clean your photo library with a flick. The fastest way to declutter your camera roll.",
-    "sweep.explore": "Explore →",
+    "flickflush.explore": "Explore →",
     "footer.studio": "© 2025 Vantoro Studio. All rights reserved.",
   },
   fr: {
@@ -643,9 +643,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "studio.sub":
       "On crée des apps mobiles iOS focalisées et soignées. Moins de fonctionnalités. Plus de qualité.",
     "studio.apps": "Nos apps",
-    "sweep.desc":
+    "flickflush.desc":
       "Nettoie ta photothèque en un swipe. La façon la plus rapide de désencombrer ta bibliothèque.",
-    "sweep.explore": "Explorer →",
+    "flickflush.explore": "Explorer →",
     "footer.studio": "© 2025 Vantoro Studio. Tous droits réservés.",
   },
 };

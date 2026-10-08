@@ -165,7 +165,7 @@ function RevealSection({ children, className = '' }: { children: React.ReactNode
   );
 }
 
-export default function SweepPage() {
+export default function FlickFlushPage() {
   const { t } = useLang();
   const pageRef = useReveal();
 
@@ -273,7 +273,7 @@ export default function SweepPage() {
               filter: 'drop-shadow(0 20px 50px rgba(0,0,0,.7))',
             }}
           >
-            <PhoneFrame src="/screenshots/screen_11.png" alt="Sweep home screen" width={270} />
+            <PhoneFrame src="/screenshots/screen_11.png" alt="FlickFlush home screen" width={270} />
           </div>
 
           {/* Main phone */}
@@ -288,7 +288,7 @@ export default function SweepPage() {
               filter: 'drop-shadow(0 30px 80px rgba(88,65,216,.3))',
             }}
           >
-            <PhoneFrame src="/screenshots/screen_3.png" alt="Sweep swipe screen" width={260} />
+            <PhoneFrame src="/screenshots/screen_3.png" alt="FlickFlush swipe screen" width={260} />
           </div>
 
           {/* Right phone */}
@@ -303,7 +303,7 @@ export default function SweepPage() {
               filter: 'drop-shadow(0 20px 50px rgba(0,0,0,.7))',
             }}
           >
-            <PhoneFrame src="/screenshots/screen_10.png" alt="Sweep session complete" width={270} />
+            <PhoneFrame src="/screenshots/screen_10.png" alt="FlickFlush session complete" width={270} />
           </div>
         </div>
       </section>
@@ -665,7 +665,7 @@ export default function SweepPage() {
       >
         <div className="flex items-center gap-2 text-[14px] font-bold">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/sweep-logo.png" alt="Sweep" width={22} height={22} style={{ borderRadius: 5, display: 'block' }} />
+          <img src="/assets/flickflush-logo.png" alt="FlickFlush" width={22} height={22} style={{ borderRadius: 5, display: 'block' }} />
           <Link href="/" className="no-underline text-[var(--color-text)] hover:opacity-70 transition-opacity">Vantoro Studio</Link>
         </div>
         <div className="flex gap-5">

@@ -19,10 +19,10 @@ interface NavProps {
   brandIcon?: React.ReactNode;
 }
 
-function SweepIcon({ size = 28 }: { size?: number }) {
+function FlickFlushIcon({ size = 28 }: { size?: number }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src="/assets/sweep-logo.png" alt="Sweep" width={size} height={size} style={{ borderRadius: 7, display: 'block' }} />
+    <img src="/assets/flickflush-logo.png" alt="FlickFlush" width={size} height={size} style={{ borderRadius: 7, display: 'block' }} />
   );
 }
 
@@ -49,7 +49,7 @@ export default function Nav({
         className="flex items-center gap-[10px] no-underline text-[var(--color-text)] text-[20px]"
         style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}
       >
-        {brandIcon ?? <SweepIcon size={28} />}
+        {brandIcon ?? <FlickFlushIcon size={28} />}
         <span>{brandText}</span>
       </Link>
 
