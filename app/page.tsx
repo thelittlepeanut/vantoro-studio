@@ -3,175 +3,111 @@
 import Link from 'next/link';
 import { useLang } from '@/components/LangContext';
 import Nav from '@/components/Nav';
-
-function VantoroIcon({ size = 100 }: { size?: number }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src="/assets/vantoro-logo.png" alt="Vantoro Studio" width={size} height={size} style={{ borderRadius: Math.round(size * 0.26), display: 'block' }} />
-  );
-}
-
-function FlickFlushIcon({ size = 28 }: { size?: number }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src="/assets/flickflush-logo.png" alt="FlickFlush" width={size} height={size} style={{ borderRadius: Math.round(size * 0.25), display: 'block' }} />
-  );
-}
+import Footer from '@/components/Footer';
+import SortDemo from '@/components/SortDemo';
+import PhoneFrame from '@/components/PhoneFrame';
+import { ArrowIcon } from '@/components/Icons';
 
 export default function StudioPage() {
   const { t } = useLang();
 
   return (
-    <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }}>
-      {/* Nav */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <Nav brandText="Vantoro Studio" brandHref="/" brandIcon={<img src="/assets/vantoro-logo.png" alt="Vantoro Studio" width={28} height={28} style={{ borderRadius: 7, display: 'block' }} />} />
-
-      {/* Hero */}
-      <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24 pb-20">
-        {/* Badge */}
-        <div
-          className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.8px] uppercase px-[14px] py-[6px] rounded-full mb-8"
-          style={{
-            background: 'rgba(88,65,216,.12)',
-            border: '1px solid rgba(88,65,216,.3)',
-            color: 'var(--color-accent-light)',
-          }}
-        >
-          <span
-            className="animate-pulse-dot"
-            style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--color-accent-light)', display: 'inline-block' }}
-          />
-          {t('studio.badge')}
-        </div>
-
-        {/* Logo */}
-        <div className="mb-8">
-          <VantoroIcon size={100} />
-        </div>
-
-        {/* Title */}
-        <h1 className="text-[clamp(60px,8vw,100px)] font-extrabold tracking-[-4px] leading-none mb-4">
-          {t('studio.title')}
-          <span className="gradient-text"> {t('studio.gradient')}</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="text-[18px] leading-relaxed max-w-md mb-0" style={{ color: 'var(--color-text-sub)' }}>
-          {t('studio.sub')}
-        </p>
-      </section>
-
-      {/* Apps Section */}
-      <section className="max-w-5xl mx-auto px-6 pb-32">
-        <div className="mb-12">
+    <>
+      <Nav />
+      <main>
+        {/* Hero: the poster. The sorting demo is the first thing on the page. */}
+        <section className="ground-yellow" style={{ paddingBlock: 'clamp(40px, 6vw, 72px) clamp(48px, 7vw, 96px)' }}>
           <div
-            className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[1.2px] uppercase mb-4"
-            style={{ color: 'var(--color-accent-light)' }}
+            className="wrap"
+            style={{ display: 'grid', gap: 'clamp(40px, 6vw, 72px)', alignItems: 'start' }}
           >
-            <span style={{ width: 16, height: 1.5, background: 'var(--color-accent-light)', display: 'inline-block' }} />
-            {t('studio.apps')}
-          </div>
-        </div>
-
-        {/* FlickFlush Card */}
-        <div
-          className="rounded-[24px] overflow-hidden p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start transition-all duration-300 hover:scale-[1.01]"
-          style={{
-            background: 'var(--color-surface)',
-            border: '1px solid var(--color-border)',
-          }}
-        >
-          {/* Phone mockups */}
-          <div className="flex gap-4 flex-shrink-0 items-end">
-            {/* Phone 1 */}
             <div
-              className="relative"
               style={{
-                width: 140,
-                transform: 'rotate(-4deg) translateY(10px)',
-                filter: 'drop-shadow(0 20px 60px rgba(88,65,216,.3))',
+                display: 'grid',
+                gap: 'clamp(32px, 5vw, 64px)',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
+                alignItems: 'start',
               }}
             >
-              <div
-                className="relative overflow-hidden"
-                style={{
-                  borderRadius: 28,
-                  border: '1.5px solid rgba(255,255,255,.14)',
-                  background: '#0a0a0e',
-                  boxShadow: '0 0 0 1px rgba(0,0,0,.7)',
-                }}
-              >
-                <div
-                  className="absolute z-10 pointer-events-none"
-                  style={{ top: 8, left: '50%', transform: 'translateX(-50%)', width: 60, height: 16, background: '#000', borderRadius: 10 }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/screenshots/screen_3.png" alt="FlickFlush swipe screen" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
+              <div>
+                <h1 className="display display-xl" style={{ margin: 0 }}>
+                  {t('home.title.1')}
+                  <br />
+                  {t('home.title.2')}
+                </h1>
+                <p className="lead" style={{ margin: '28px 0 0' }}>
+                  {t('home.sub')}
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, marginTop: 36 }}>
+                  <Link href="/flickflush" className="btn">
+                    {t('home.cta')}
+                    <ArrowIcon size={24} />
+                  </Link>
+                  <span className="status">{t('soon.label')}</span>
+                </div>
               </div>
+
+              <SortDemo />
+            </div>
+          </div>
+        </section>
+
+        {/* The app */}
+        <section className="ground-green section">
+          <div className="wrap feature" data-flip="true">
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/flickflush-logo.png"
+                  alt=""
+                  width={72}
+                  height={72}
+                  style={{ borderRadius: 18, display: 'block' }}
+                />
+                <h2 className="display display-l" style={{ margin: 0 }}>
+                  {t('home.app.title')}
+                </h2>
+              </div>
+              <p className="lead" style={{ margin: '28px 0 36px' }}>
+                {t('home.app.desc')}
+              </p>
+              <Link href="/flickflush" className="btn" data-variant="light">
+                {t('home.app.link')}
+                <ArrowIcon size={24} />
+              </Link>
             </div>
 
-            {/* Phone 2 */}
-            <div
-              className="relative"
-              style={{
-                width: 140,
-                transform: 'rotate(4deg) translateY(10px)',
-                filter: 'drop-shadow(0 20px 60px rgba(0,0,0,.5))',
-              }}
-            >
-              <div
-                className="relative overflow-hidden"
-                style={{
-                  borderRadius: 28,
-                  border: '1.5px solid rgba(255,255,255,.14)',
-                  background: '#0a0a0e',
-                  boxShadow: '0 0 0 1px rgba(0,0,0,.7)',
-                }}
-              >
-                <div
-                  className="absolute z-10 pointer-events-none"
-                  style={{ top: 8, left: '50%', transform: 'translateX(-50%)', width: 60, height: 16, background: '#000', borderRadius: 10 }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/screenshots/screen_10.png" alt="FlickFlush session complete" style={{ display: 'block', width: '100%', height: 'auto', borderRadius: 26 }} />
+            <div className="phones" style={{ gap: 'clamp(12px, 2vw, 28px)' }}>
+              <div className="rise" style={{ width: '44%', marginTop: 56 }}>
+                <PhoneFrame src="/screenshots/s_3.jpg" alt="" width={400} />
+              </div>
+              <div className="rise" style={{ width: '44%' }}>
+                <PhoneFrame src="/screenshots/s_dupes.jpg" alt="" width={400} />
               </div>
             </div>
           </div>
+        </section>
 
-          {/* App info */}
-          <div className="flex-1">
-            <div className="flex items-center gap-3 mb-4">
-              <FlickFlushIcon size={44} />
-              <h2 className="text-[28px]" style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}>FlickFlush</h2>
+        {/* The studio */}
+        <section className="ground-ink section">
+          <div className="wrap" style={{ display: 'grid', gap: 40, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', alignItems: 'end' }}>
+            <h2 className="display display-l" style={{ margin: 0 }}>
+              {t('home.studio.title')}
+            </h2>
+            <div>
+              <p className="lead" style={{ margin: '0 0 28px' }}>
+                {t('home.studio.body')}
+              </p>
+              <a href="mailto:help@vantoro.studio" className="btn" data-variant="yellow">
+                {t('home.studio.contact')}
+                <ArrowIcon size={24} />
+              </a>
             </div>
-            <p className="text-[16px] leading-relaxed mb-6" style={{ color: 'var(--color-text-sub)' }}>
-              {t('flickflush.desc')}
-            </p>
-            <Link
-              href="/flickflush"
-              className="inline-flex items-center gap-2 text-[14px] font-semibold no-underline transition-opacity duration-200 hover:opacity-70"
-              style={{ color: 'var(--color-accent-light)' }}
-            >
-              {t('flickflush.explore')}
-            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer
-        className="flex flex-col md:flex-row items-center justify-between gap-3 px-6 md:px-[52px] py-9"
-        style={{ borderTop: '1px solid var(--color-border)' }}
-      >
-        <div className="flex items-center gap-2 text-[14px] font-bold">
-          <VantoroIcon size={22} />
-          Vantoro Studio
-        </div>
-        <p className="text-[12px]" style={{ color: 'var(--color-text-faint)' }}>
-          {t('footer.studio')}
-        </p>
-      </footer>
-    </div>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -1,118 +1,71 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useLang } from './LangContext';
 
-interface NavLink {
+interface SectionLink {
   href: string;
   key: string;
+  tone?: 'green' | 'blue' | 'grey';
 }
 
-interface NavProps {
-  links?: NavLink[];
-  ctaKey?: string;
-  ctaHref?: string;
-  backHref?: string;
-  backKey?: string;
-  brandText?: string;
-  brandHref?: string;
-  brandIcon?: React.ReactNode;
-}
-
-function FlickFlushIcon({ size = 28 }: { size?: number }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src="/assets/flickflush-logo.png" alt="FlickFlush" width={size} height={size} style={{ borderRadius: 7, display: 'block' }} />
-  );
-}
-
-export default function Nav({
-  links,
-  ctaKey,
-  ctaHref = '#',
-  backHref,
-  backKey = 'nav.back',
-  brandText = 'FlickFlush',
-  brandHref = '/flickflush',
-  brandIcon,
-}: NavProps) {
+export default function Nav({ sections }: { sections?: SectionLink[] }) {
   const { lang, setLang, t } = useLang();
+  const pathname = usePathname();
 
   return (
-    <nav
-      style={{ background: 'rgba(9,9,13,.8)' }}
-      className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-[52px] py-[18px] backdrop-blur-[20px] border-b border-[var(--color-border)]"
-    >
-      {/* Brand */}
-      <Link
-        href={brandHref}
-        className="flex items-center gap-[10px] no-underline text-[var(--color-text)] text-[20px]"
-        style={{ fontFamily: 'var(--font-pacifico, var(--font-sans))' }}
-      >
-        {brandIcon ?? <FlickFlushIcon size={28} />}
-        <span>{brandText}</span>
-      </Link>
+    <header className="site-nav">
+      <div className="wrap">
+        <Link href="/" className="nav-brand" aria-label="Vantoro Studio">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/vantoro-logo.png" alt="" width={32} height={32} />
+          <span>Vantoro Studio</span>
+        </Link>
 
-      {/* Nav links */}
-      {links && links.length > 0 && (
-        <div className="hidden md:flex gap-7 items-center">
-          {links.map((link) => (
-            <a
-              key={link.key}
-              href={link.href}
-              className="text-[var(--color-text-muted)] text-[14px] font-medium no-underline hover:text-[var(--color-text)] transition-colors duration-200"
-            >
-              {t(link.key)}
-            </a>
-          ))}
-        </div>
-      )}
+        <nav aria-label={t('nav.menu')} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          {sections && (
+            <ul className="nav-links nav-sections">
+              {sections.map((s) => (
+                <li key={s.href}>
+                  <a href={s.href} className="nav-link" data-tone={s.tone}>
+                    {t(s.key)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+          <ul className="nav-links">
+            <li>
+              <Link
+                href="/flickflush"
+                className="nav-link"
+                aria-current={pathname === '/flickflush' ? 'page' : undefined}
+              >
+                {t('nav.flickflush')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/flickflush/support"
+                className="nav-link"
+                aria-current={pathname.startsWith('/flickflush/support') ? 'page' : undefined}
+              >
+                {t('nav.support')}
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-      {/* Right side: lang toggle + optional CTA or back link */}
-      <div className="flex items-center gap-4">
-        {/* Lang toggle */}
-        <div className="flex items-center gap-[6px]">
-          <button
-            onClick={() => setLang('en')}
-            className={`bg-transparent border-none cursor-pointer text-[12px] font-bold tracking-[0.5px] px-[2px] py-1 transition-colors duration-200 ${
-              lang === 'en' ? 'text-[var(--color-text)]' : 'text-[var(--color-text-muted)]'
-            }`}
-            style={{ fontFamily: 'inherit' }}
-          >
+        <div className="lang" role="group" aria-label={t('nav.lang')}>
+          <button type="button" aria-pressed={lang === 'en'} onClick={() => setLang('en')}>
             EN
           </button>
-          <span className="text-[var(--color-text-faint)] text-[11px]">|</span>
-          <button
-            onClick={() => setLang('fr')}
-            className={`bg-transparent border-none cursor-pointer text-[12px] font-bold tracking-[0.5px] px-[2px] py-1 transition-colors duration-200 ${
-              lang === 'fr' ? 'text-[var(--color-text)]' : 'text-[var(--color-text-muted)]'
-            }`}
-            style={{ fontFamily: 'inherit' }}
-          >
+          <button type="button" aria-pressed={lang === 'fr'} onClick={() => setLang('fr')}>
             FR
           </button>
         </div>
-
-        {/* Back link */}
-        {backHref && (
-          <Link
-            href={backHref}
-            className="text-[var(--color-text-muted)] text-[13px] font-medium no-underline hover:text-[var(--color-text)] transition-colors duration-200 flex items-center gap-[6px]"
-          >
-            {t(backKey)}
-          </Link>
-        )}
-
-        {/* CTA button */}
-        {ctaKey && (
-          <a
-            href={ctaHref}
-            className="bg-[var(--color-accent)] text-white px-5 py-[9px] rounded-full text-[13px] font-semibold no-underline hover:opacity-85 hover:-translate-y-px transition-all duration-200"
-          >
-            {t(ctaKey)}
-          </a>
-        )}
       </div>
-    </nav>
+    </header>
   );
 }
