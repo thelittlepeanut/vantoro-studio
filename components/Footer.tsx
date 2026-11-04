@@ -33,15 +33,25 @@ export default function Footer() {
             <h2>{t('footer.apps')}</h2>
             <ul>
               <li><Link href="/flickflush">FlickFlush</Link></li>
+              <li><Link href="/quotient">Quotient</Link></li>
             </ul>
           </div>
 
           <div>
-            <h2>{t('footer.help')}</h2>
+            <h2>FlickFlush</h2>
             <ul>
               <li><Link href="/flickflush/support">{t('footer.support')}</Link></li>
               <li><Link href="/flickflush/privacy">{t('footer.privacy')}</Link></li>
               <li><Link href="/flickflush/terms">{t('footer.terms')}</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Quotient</h2>
+            <ul>
+              <li><Link href="/quotient/support">{t('footer.support')}</Link></li>
+              <li><Link href="/quotient/privacy">{t('footer.privacy')}</Link></li>
+              <li><Link href="/quotient/terms">{t('footer.terms')}</Link></li>
             </ul>
           </div>
 

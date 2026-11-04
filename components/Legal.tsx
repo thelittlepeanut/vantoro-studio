@@ -44,10 +44,12 @@ interface ShellProps {
   title: string;
   meta?: string;
   tone?: 'yellow' | 'green' | 'blue' | 'grey';
+  /** Where the "back" link goes. Defaults to the FlickFlush page. */
+  back?: { href: string; label: string };
   children: React.ReactNode;
 }
 
-export function LegalShell({ title, meta, tone = 'yellow', children }: ShellProps) {
+export function LegalShell({ title, meta, tone = 'yellow', back, children }: ShellProps) {
   const { t } = useLang();
   return (
     <>
@@ -55,8 +57,8 @@ export function LegalShell({ title, meta, tone = 'yellow', children }: ShellProp
       <main>
         <section className={`ground-${tone}`} style={{ paddingBlock: 'clamp(48px, 8vw, 104px) clamp(40px, 6vw, 72px)' }}>
           <div className="wrap">
-            <Link href="/flickflush" style={{ color: 'inherit', fontWeight: 600 }}>
-              ← {t('legal.back')}
+            <Link href={back?.href ?? '/flickflush'} style={{ color: 'inherit', fontWeight: 600 }}>
+              ← {back?.label ?? t('legal.back')}
             </Link>
             <h1 className="display display-l" style={{ margin: '28px 0 0' }}>{title}</h1>
             {meta && <p className="lead" style={{ margin: '20px 0 0' }}>{meta}</p>}

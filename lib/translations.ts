@@ -1,4 +1,5 @@
 import { copy } from "./copy";
+import { quotient } from "./quotient";
 
 export type Lang = "en" | "fr";
 
@@ -310,6 +311,6 @@ const legal: Record<Lang, Record<string, string>> = {
 
 
 export const translations: Record<Lang, Record<string, string>> = {
-  en: { ...legal.en, ...copy.en },
-  fr: { ...legal.fr, ...copy.fr },
+  en: { ...legal.en, ...copy.en, ...quotient.en },
+  fr: { ...legal.fr, ...copy.fr, ...quotient.fr },
 };

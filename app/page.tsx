@@ -89,6 +89,43 @@ export default function StudioPage() {
           </div>
         </section>
 
+        {/* Quotient */}
+        <section className="ground-blue section">
+          <div className="wrap feature">
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/quotient-icon.png"
+                  alt=""
+                  width={72}
+                  height={72}
+                  style={{ borderRadius: 18, display: 'block' }}
+                />
+                <h2 className="display display-l" style={{ margin: 0 }}>
+                  {t('q.name')}
+                </h2>
+              </div>
+              <p className="lead" style={{ margin: '28px 0 36px' }}>
+                {t('q.home.desc')}
+              </p>
+              <Link href="/quotient" className="btn" data-variant="light">
+                {t('q.home.link')}
+                <ArrowIcon size={24} />
+              </Link>
+            </div>
+
+            <div className="phones" style={{ gap: 'clamp(12px, 2vw, 28px)' }}>
+              <div className="rise" style={{ width: '44%', marginTop: 56 }}>
+                <PhoneFrame src="/screenshots/quotient-home.jpg" alt={t('q.alt.home')} width={400} />
+              </div>
+              <div className="rise" style={{ width: '44%' }}>
+                <PhoneFrame src="/screenshots/quotient-lock.jpg" alt={t('q.alt.lock')} width={400} />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* The studio */}
         <section className="ground-ink section">
           <div className="wrap" style={{ display: 'grid', gap: 40, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', alignItems: 'end' }}>

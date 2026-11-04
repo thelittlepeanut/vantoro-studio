@@ -47,6 +47,15 @@ export default function Nav({ sections }: { sections?: SectionLink[] }) {
             </li>
             <li>
               <Link
+                href="/quotient"
+                className="nav-link"
+                aria-current={pathname === '/quotient' ? 'page' : undefined}
+              >
+                {t('q.nav')}
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/flickflush/support"
                 className="nav-link"
                 aria-current={pathname.startsWith('/flickflush/support') ? 'page' : undefined}
