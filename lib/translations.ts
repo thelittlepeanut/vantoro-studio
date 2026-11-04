@@ -189,7 +189,7 @@ const base: Record<Lang, Record<string, string>> = {
     // Privacy page
     "privacy.page.badge": "Legal",
     "privacy.page.h1": "Privacy Policy",
-    "privacy.page.updated": "Last updated: May 27, 2025",
+    "privacy.page.updated": "Last updated: November 4, 2026",
     "privacy.tldr":
       "FlickFlush does not collect, store, or transmit any of your personal data or photos. Everything happens on your device. No account, no server, no cloud.",
     "privacy.s1.h2": "1. Who we are",
@@ -514,7 +514,7 @@ const base: Record<Lang, Record<string, string>> = {
     // Privacy page
     "privacy.page.badge": "Légal",
     "privacy.page.h1": "Politique de confidentialité",
-    "privacy.page.updated": "Dernière mise à jour : 27 mai 2025",
+    "privacy.page.updated": "Dernière mise à jour : 4 novembre 2026",
     "privacy.tldr":
       "FlickFlush ne collecte, ne stocke ni ne transmet aucune de tes données personnelles ou photos. Tout se passe sur ton appareil. Pas de compte, pas de serveur, pas de cloud.",
     "privacy.s1.h2": "1. Qui sommes-nous",
