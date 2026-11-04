@@ -157,6 +157,33 @@ export default function StudioPage() {
             </Link>
           </div>
         </div>
+
+        {/* Quotient Card */}
+        <div
+          className="rounded-[24px] overflow-hidden p-8 md:p-12 mt-6 flex flex-col md:flex-row gap-8 items-center md:items-start transition-all duration-300 hover:scale-[1.01]"
+          style={{
+            background: 'var(--color-surface)',
+            border: '1px solid var(--color-border)',
+          }}
+        >
+          <div className="flex-1">
+            <div className="flex items-center gap-3 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/quotient-icon.png" alt="Quotient" width={44} height={44} style={{ borderRadius: 11, display: 'block' }} />
+              <h2 className="text-[28px] font-bold tracking-[-1px]">Quotient</h2>
+            </div>
+            <p className="text-[16px] leading-relaxed mb-6" style={{ color: 'var(--color-text-sub)' }}>
+              {t('q.home.desc')}
+            </p>
+            <Link
+              href="/quotient"
+              className="inline-flex items-center gap-2 text-[14px] font-semibold no-underline transition-opacity duration-200 hover:opacity-70"
+              style={{ color: 'var(--color-accent-light)' }}
+            >
+              {t('q.home.link')} →
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Footer */}

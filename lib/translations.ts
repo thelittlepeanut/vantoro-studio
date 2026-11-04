@@ -1,6 +1,8 @@
+import { quotient } from "./quotient";
+
 export type Lang = "en" | "fr";
 
-export const translations: Record<Lang, Record<string, string>> = {
+const base: Record<Lang, Record<string, string>> = {
   en: {
     // Nav
     "nav.swipe": "Swipe",
@@ -648,4 +650,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "flickflush.explore": "Explorer →",
     "footer.studio": "© 2025 Vantoro Studio. Tous droits réservés.",
   },
+};
+
+export const translations: Record<Lang, Record<string, string>> = {
+  en: { ...base.en, ...quotient.en },
+  fr: { ...base.fr, ...quotient.fr },
 };
